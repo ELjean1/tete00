@@ -11,19 +11,19 @@ const produtos = [
         nome: "Teclado Mecânico",
         preco: 199.90,
         categoria: "Periféricos",
-        imagem: "https://cdn.oderco.com.br/produtos/317919/4BAA10CF7A3A546AE0630300A8C0BF9A"
+        imagem: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500"
     },
     {
         nome: "Mouse Gamer",
         preco: 89.90,
         categoria: "Periféricos",
-        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR8YNx_RRPtKhM8fPcmNuSoRjstjW0Dxc2FWJGeng3JXar6iLj5Aue9D7D&s=10"
+        imagem: "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500"
     },
     {
         nome: "Headset Gamer",
         preco: 149.90,
         categoria: "Áudio",
-        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZEgtSyyAMGKlMr9A2bhudSwWHs-x27OVNap-Z_R7tgfLYs-FQ5RtKl9k&s=10"
+        imagem: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
     }
 ];
 
@@ -32,5 +32,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(3000, () => {
-    console.log("Servidor rodando em http://localhost:3000");
+    console.log("Servidor funcionando!");
 });
