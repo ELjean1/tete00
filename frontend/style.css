@@ -1,4 +1,4 @@
-* {
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,52 +8,77 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     min-height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 40px 20px;
 }
 
 main {
-    width: 100%;
-    max-width: 600px;
-    padding: 30px;
-    text-align: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 h1 {
-    margin-bottom: 25px;
+    text-align: center;
+    margin-bottom: 35px;
     color: #222;
+    font-size: 32px;
 }
 
 #lista-produtos {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
 .card {
-    width: 100%;
-    max-width: 400px;
     background-color: white;
-    padding: 25px;
-    border-radius: 12px;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .card h2 {
     color: #222;
-    margin-bottom: 15px;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .card p {
-    margin: 10px 0;
-    color: #555;
+    color: #666;
+    font-size: 16px;
+    margin: 8px 0;
 }
 
-.preco {
+.card .preco {
+    color: #008000;
     font-size: 24px;
     font-weight: bold;
-    color: green;
-    margin-top: 20px;
+    margin-top: 15px;
+}
+
+.erro {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+}
+
+/* Celular */
+@media (max-width: 768px) {
+
+    #lista-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
 }
